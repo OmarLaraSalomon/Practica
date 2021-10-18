@@ -1,0 +1,21 @@
+.colorred{
+    color: red;
+}
+#link{
+    color: blue;
+}
+
+.imagen{
+    
+        height:100%;
+        width: 100%;
+      
+
+      
+}
+.fondo{
+
+ background-image: url("https://www.xtrafondos.com/wallpapers/fortnite-x-todos-los-trajes-de-battle-pass-skins-season-10-3751.jpg");
+ background-size: cover;
+
+    }
