@@ -1,0 +1,342 @@
+
+C:\Users\rookie\Desktop
+λ cd Practica
+
+C:\Users\rookie\Desktop\Practica (main -> origin)
+λ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Prueba.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Prueba.html
+
+
+C:\Users\rookie\Desktop\Practica (main -> origin)
+λ git add .
+
+C:\Users\rookie\Desktop\Practica (main -> origin)
+λ git commite -m "prueba de subida"
+git: 'commite' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+C:\Users\rookie\Desktop\Practica (main -> origin)
+λ git commit -m "prueba de subida"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'rookie@DESKTOP-145QR2O.(none)')
+
+C:\Users\rookie\Desktop\Practica (main -> origin)
+λ git config --global user.email "omar.laso0001@gmail.com"
+
+C:\Users\rookie\Desktop\Practica (main -> origin)
+λ
+C:\Users\rookie\Desktop\Practica (main -> origin)
+λ a git config --global user.name "OmarLaraSalomon"
+"a" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Users\rookie\Desktop\Practica (main -> origin)
+λ git config --global user.name "OmarLaraSalomon"
+
+C:\Users\rookie\Desktop\Practica (main -> origin)
+λ git commit -m "prueba de subida"
+[main 1150e6d] prueba de subida
+ 1 file changed, 42 insertions(+)
+ create mode 100644 Prueba.html
+
+C:\Users\rookie\Desktop\Practica (main -> origin)
+λ git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 726 bytes | 363.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:OmarLaraSalomon/Practica.git
+   4aa1b1a..1150e6d  main -> main
+
+C:\Users\rookie\Desktop\Practica (main -> origin)
+λ git hard --reset
+git: 'hard' is not a git command. See 'git --help'.
+
+The most similar commands are
+        add
+        var
+
+C:\Users\rookie\Desktop\Practica (main -> origin)
+λ git reset --hard
+HEAD is now at 1150e6d prueba de subida
+
+C:\Users\rookie\Desktop\Practica (main -> origin)
+λ git checkout -b clase
+Switched to a new branch 'clase'
+
+C:\Users\rookie\Desktop\Practica (clase)
+λ git status
+On branch clase
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Prueba.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\rookie\Desktop\Practica (clase)
+λ git add .
+
+C:\Users\rookie\Desktop\Practica (clase)
+λ git commit -m "segundatabla"
+[clase fe7ff6c] segundatabla
+ 1 file changed, 30 insertions(+)
+
+C:\Users\rookie\Desktop\Practica (clase)
+λ git push
+fatal: The current branch clase has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin clase
+
+
+C:\Users\rookie\Desktop\Practica (clase)
+λ git push origin claase
+error: src refspec claase does not match any
+error: failed to push some refs to 'github.com:OmarLaraSalomon/Practica.git'
+
+C:\Users\rookie\Desktop\Practica (clase)
+λ git push origin clase
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 375 bytes | 375.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'clase' on GitHub by visiting:
+remote:      https://github.com/OmarLaraSalomon/Practica/pull/new/clase
+remote:
+To github.com:OmarLaraSalomon/Practica.git
+ * [new branch]      clase -> clase
+
+C:\Users\rookie\Desktop\Practica (clase)
+λ git status
+On branch clase
+nothing to commit, working tree clean
+
+C:\Users\rookie\Desktop\Practica (clase)
+λ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+C:\Users\rookie\Desktop\Practica (main -> origin)
+λ git checkout clase
+Switched to branch 'clase'
+
+C:\Users\rookie\Desktop\Practica (clase)
+λ git branch
+* clase
+  main
+
+C:\Users\rookie\Desktop\Practica (clase)
+λ git branch -a
+* clase
+  main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/clase
+  remotes/origin/main
+
+C:\Users\rookie\Desktop\Practica (clase)
+λ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.email=omar.laso0001@gmail.com
+user.name=OmarLaraSalomon
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+remote.origin.url=git@github.com:OmarLaraSalomon/Practica.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.main.remote=origin
+branch.main.merge=refs/heads/main
+
+C:\Users\rookie\Desktop\Practica (clase)
+λ git log -5
+commit fe7ff6c63d09461f9947a45ff00d05526d636c9c (HEAD -> clase, origin/clase)
+Author: OmarLaraSalomon <omar.laso0001@gmail.com>
+Date:   Mon Oct 18 10:16:48 2021 -0500
+
+    segundatabla
+
+commit 1150e6d9abf99f27ab6268ed9c8f26712ae538ba (origin/main, origin/HEAD, main)
+Author: OmarLaraSalomon <omar.laso0001@gmail.com>
+Date:   Mon Oct 18 09:53:31 2021 -0500
+
+    prueba de subida
+
+commit 4aa1b1a71d759da61b7b09596f13004162775969
+Author: OmarLaraSalomon <92542763+OmarLaraSalomon@users.noreply.github.com>
+Date:   Fri Oct 15 12:07:48 2021 -0500
+
+    Initial commit
+
+C:\Users\rookie\Desktop\Practica (clase)
+λ git status
+On branch clase
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Prueba.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\rookie\Desktop\Practica (clase)
+λ git add .
+
+C:\Users\rookie\Desktop\Practica (clase)
+λ git branch
+* clase
+  main
+
+
+
+
+
+
+
+
+
+
+
+
+
+C:\Users\rookie\Desktop\Practica (tabla3)
+//crear nueva rama
+λ git checkout -b nuevatabla3
+Switched to a new branch 'nuevatabla3'
+
+
+
+C:\Users\rookie\Desktop\Practica (nuevatabla3)
+//ver los cambios 
+λ git status
+On branch nuevatabla3
+nothing to commit, working tree clean
+
+
+
+
+// especificar todos los cambios que no se ha subido de golpe 
+C:\Users\rookie\Desktop\Practica (nuevatabla3)
+λ git add .
+
+
+
+//especificar lo que se esta haciendo
+C:\Users\rookie\Desktop\Practica (nuevatabla3)
+λ git commit -m "tercertabla"
+On branch nuevatabla3
+nothing to commit, working tree clean
+
+
+
+
+
+//subirlo
+C:\Users\rookie\Desktop\Practica (nuevatabla3)
+λ git push
+fatal: The current branch nuevatabla3 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin nuevatabla3
+
+
+
+//especificar en que rama subir 
+C:\Users\rookie\Desktop\Practica (nuevatabla3)
+λ git push origin nuevatabla3
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 464 bytes | 232.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'nuevatabla3' on GitHub by visiting:
+remote:      https://github.com/OmarLaraSalomon/Practica/pull/new/nuevatabla3
+remote:
+To github.com:OmarLaraSalomon/Practica.git
+ * [new branch]      nuevatabla3 -> nuevatabla3
+
+
+
+//rama a trabajr 
+C:\Users\rookie\Desktop\Practica (nuevatabla3)
+λ git checkout
+
+
+
+// ver todas las ramas
+
+C:\Users\rookie\Desktop\Practica (nuevatabla3)
+λ git branch
+  clase
+  main
+* nuevatabla3
+  tabla3
+
+
+//cambiar de ramas 
+
+C:\Users\rookie\Desktop\Practica (nuevatabla3)
+λ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+
+
+C:\Users\rookie\Desktop\Practica (main -> origin)
+λ git checkout clase
+Switched to branch 'clase'
+
+
+
+C:\Users\rookie\Desktop\Practica (clase)
+λ git checkout nuevatabla3
+Switched to branch 'nuevatabla3'
+
+C:\Users\rookie\Desktop\Practica (nuevatabla3)
+λ
