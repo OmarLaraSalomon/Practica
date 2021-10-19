@@ -1,5 +1,50 @@
-.colorred{
-    color: red;
+:root{    
+    
+   
+
+    --colorTextos: blue ;
+    
+    
+    }
+    
+    
+    *,
+    
+    
+    ::before,
+    ::after {
+        margin:0 ;
+        padding:0;
+        box-sizing: border-box;
+    }
+    
+    
+    body{
+        font-family:Georgia, 'Times New Roman', Times, serif;
+
+  height: 600px;
+display: flex;
+justify-content: center;
+align-items: center;
+    }
+
+h1{
+    text-align: center;
+    font-weight: 700px;
+}
+
+form{
+    background-color: white;
+
+    padding: 50px ;
+    box-shadow: 0 0 6px 0 rgba(255,255,255, 0.8);
+    border-radius: 10px;
+}
+
+
+
+.colores{
+    color : black;
 }
 #link{
     color: blue;
@@ -19,3 +64,42 @@
  background-size: cover;
 
     }
+
+ .form{
+
+
+ }
+
+ form .grupo{
+    position: relative; 
+   margin: 100px;
+ }
+
+
+ input{
+
+background: none;
+color : black ; 
+margin-bottom: 5px;
+width: 100px ;
+ }
+ .barra{
+   color: black;  
+}
+
+label{
+    color:rgb(0, 0, 0) ;
+}
+
+
+.titulo{
+   margin: 30px; 
+   color:blueviolet;
+}
+
+.botonesdeinicio{
+
+    margin: 10px; 
+
+
+}
