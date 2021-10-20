@@ -1,0 +1,36 @@
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+   
+    background-image: url("https://i.ytimg.com/vi/wmBtXdSib2E/maxresdefault.jpg");
+    background-size: cover;
+
+
+}
+.menu{
+ 
+    list-style: none;
+padding: 0;
+background: #092327;
+width: 90%;
+max-width: 100px;
+margin: auto;
+
+
+}
+
+.menu li a {
+    text-decoration: none;
+    color :white;
+    padding: 20px;
+    display: block;
+}
+
+.menu li a {
+    
+    display : inline-block;
+    text-align: center;
+
+}
+.menu li a :hover {
+    background: #ef8354;
+}
