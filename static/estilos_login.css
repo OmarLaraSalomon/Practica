@@ -1,0 +1,21 @@
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+   
+    background-color:palevioletred;
+
+
+
+}
+
+
+.titulo{
+    margin: 15px; 
+    color:blueviolet;
+ }
+
+ .tituloLogin{
+
+    margin: 15px; 
+    color: black;
+
+ }
