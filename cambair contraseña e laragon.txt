@@ -1,0 +1,7 @@
+CAMBIAR OCNTRASEÑA EN LARAGON 
+
+https://desarrolloweb.com/articulos/laragon.html
+
+
+Si necesitas cambiar la clave puedes hacerlo desde la propia ventana de Laragon en Menu / MySQL / "Cambiar contraseña de usuario root".
+

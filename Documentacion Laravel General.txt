@@ -1,0 +1,126 @@
+///Proyectos Nuevos\\
+
+//Crear Proyecto Nuevo
+composer create-project --prefer-dist laravel/laravel example_cyvsa
+
+//adentrarme al pproyecto  cd nombre del proyecto
+
+//Instalamos los requerimentos de Laravel
+composer require laravel/ui
+
+
+//Instalamos la autenticacion con VUE
+php artisan ui vue --auth
+
+//Instalamos Dependencias de Node.js
+npm i
+
+//Compilamos el proyecto
+npm run dev
+
+///Editar con esta linea el boot en el app/providers/appserviceprovider.php
+		Schema::defaultStringLength(191);
+
+
+/////////////////////////////////////////EJEMPLO///////////////////////////////////////////////////////
+
+<?php
+
+namespace App\Providers;
+
+use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Schema;
+class AppServiceProvider extends ServiceProvider
+{
+    /**
+     * Register any application services.
+     *
+     * @return void
+     */
+    public function register()
+    {
+        //
+    }
+
+    /**
+     * Bootstrap any application services.
+     *
+     * @return void
+     */
+    public function boot()
+
+    {
+        Schema::defaultStringLength(191);
+
+        //
+    }
+}
+
+
+
+
+
+///Hacer Migraciones
+
+php artisan migrate 
+
+//Creacion de del disco publico Storage para imagenes
+php artisan storage:link
+
+
+
+Actualizar el package.json 
+
+Ejecutar comando 
+npm outdated
+
+Instalar el paquete llamado npm-check-updates de forma global
+npm install -g npm-check-updates
+
+
+Actualizar Package (No utilizar consola de windows powershell)
+ncu -u
+
+
+
+
+//////////////// Instalamos VUETIFY
+
+npm install vuetify
+
+////////////////Editar app.js
+Agrega las siguientes líneas al fichero «resources/js/app.js» para inicializar Vuetify
+
+import Vuetify from 'vuetify'
+Vue.use(Vuetify);
+//////////////////Y añadimos la instancia de Vuetify como parámetro en la de Vue:
+
+const app = new Vue({
+    el: '#app',
+    vuetify: new Vuetify(),
+});
+
+
+
+
+/////////////////Editar app.scss
+////////////////Añade 2 importaciones al fichero «resources/sass/app.scss«, una con la fuente de los iconos de material design y otra con el css correspondiente a la biblioteca vuetify.
+
+// Fonts
+@import url('https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css');
+
+// Vuetify
+@import '~vuetify/dist/vuetify.min.css';
+
+
+//////////Añadir vue global 
+npm install @vue/cli -g
+
+
+//////////Añadimos vuetify
+npm install vuetify --save
+
+
+
+
+

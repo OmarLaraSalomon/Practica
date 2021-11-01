@@ -1,0 +1,7 @@
+Python
+Node
+Composer
+Laragon
+Visual Studio Code
+Anaconda
+Zoom
